@@ -1,0 +1,26 @@
+# 데이터셋
+train/
+val/
+test/
+images/
+labels/
+
+# 모델 가중치
+*.pt
+*.onnx
+*.torchscript
+
+# 학습 결과
+runs/
+
+# 캐시
+*.cache
+__pycache__/
+*.pyc
+
+# IDE / 툴
+.idea/
+.claude/
+*.png
+*.jpg
+*.jpeg
