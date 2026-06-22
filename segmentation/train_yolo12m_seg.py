@@ -9,7 +9,7 @@ model.train(
     batch=4,
     patience=20,
     workers=8,
-    device=0,
+    device=2,
     project="/mnt/c/Users/pc/Downloads/sugar_beet_yolo/segmentation/runs",
     name="yolo12m_seg_v1",
     exist_ok=True,
