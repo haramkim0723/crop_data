@@ -5,16 +5,16 @@ yolo12m_v3: 작물(class 0) 오프라인 증강 후 학습
 """
 from ultralytics import YOLO
 
-model = YOLO("yolo12m.pt")
+model = YOLO("/mnt/c/Users/pc/Downloads/sugar_beet_yolo/weights/yolo12m.pt")
 model.train(
-    data="/mnt/c/Users/pc/Downloads/sugar_beet_yolo/dataset.yaml",
+    data="/mnt/c/Users/pc/Downloads/sugar_beet_yolo/detection/dataset.yaml",
     epochs=100,
     imgsz=1280,
     batch=4,
     patience=20,
     workers=8,
     device=0,
-    project="/mnt/c/Users/pc/Downloads/sugar_beet_yolo/runs",
+    project="/mnt/c/Users/pc/Downloads/sugar_beet_yolo/detection/runs",
     name="yolo12m_v3",
     exist_ok=True,
     verbose=True,

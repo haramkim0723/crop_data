@@ -12,7 +12,7 @@ model.train(
     data="/mnt/c/Users/pc/Downloads/sugar_beet_yolo/segmentation/dataset.yaml",
     epochs=100,
     imgsz=1280,
-    batch=4,
+    batch=8,
     patience=20,
     workers=8,
     device=2,
